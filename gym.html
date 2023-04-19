@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GiMo</title>
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="script12.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link href="styles.css" type="text/css" rel="Stylesheet" />
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4>Login / SignUp</h4>
+      <form id="loginForm">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label class='checkbox'>
+          <input type='checkbox' value='TRUE' title='Keep me Signed in' / required> Keep me Signed in
+        </label>
+        <br><br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+</head>
+<body>
+  
+  <section id="hero">
+    <header>
+      <div class="container">
+        <div id="header-logo-mobile" class="top-gym-logo">
+          <a href="#">Top<br/>Gym</a>
+        </div>
+
+        <nav>
+          <ul class="flex">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#features" class="menu-btn">features</a></li>
+            <li><a href="#services" class="menu-btn">Services</a></li>
+            <li id="header-logo" class="top-gym-logo">
+              <a href="#">Top<br/>Gym</a>
+            </li>
+            <li><a href="#trainers">Instructors</a></li>
+            <li><a href="#schedule-services">News</a></li>
+            <li><a href="#form">Contact</a></li>
+            <li><a onclick="openModal()">Login</a></li>
+            <li>
+              <button id="search"><span class="fa fa-search"></span></button>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="hamburger-menu">
+          <span class="strip"></span>
+          <span class="strip"></span>
+          <span class="strip"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="hero-slider">
+      <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-1.jpg');">
+        <div class="hero-slider-marketing">
+          <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+          <h2>Be Fit. Top Gym</h2>
+          <button>More Info</button>
+        </div>
+      </div>
+
+      <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-2.jpg');">
+        <div class="hero-slider-marketing">
+          <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+          <h2>Be Fit. Top Trainer</h2>
+          <button>More Info</button>
+        </div>
+      </div>
+
+      <div class="hero-slide-item" style="background-image:url('https://onclickwebdesign.com/wp-content/uploads/main-slider-3.jpg');">
+        <div class="hero-slider-marketing">
+          <a href="#" class="youtube-button"><span class="fa fa-play"></span></a>
+          <h2>Be Fit. Top Body</h2>
+          <button>More Info</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="flex container">
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/feature-1.jpg" alt="Exercise Class" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="https://onclickwebdesign.com/wp-content/uploads/icon-1.png" alt="Star Trophy Icon" />
+          </div>
+          <h4>Amazing Setting</h4>
+          <p>Our gym training programs are tailored to suit every level of fitness, from beginners to seasoned athletes. We offer a range of workouts, including high-intensity interval training, weightlifting, cardio, and more, all designed to challenge and motivate you to push your limits.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/feature-2.jpg" alt="Man doing dumbbell rows" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="https://onclickwebdesign.com/wp-content/uploads/icon-2.png" alt="Dumbbell Icon" />
+          </div>
+          <h4>Best Trainers</h4>
+          <p>Looking for the best trainer in the gym? Look no further! Our gym boasts some of the best trainers in the industry, with years of experience and a passion for helping clients achieve their fitness goals.</p>        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/feature-3.jpg" alt="Woman doing leg press" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="https://onclickwebdesign.com/wp-content/uploads/icon-3.png" alt="Smoothie Icon" />
+          </div>
+          <h4>Diet Plans</h4>
+          <p>Our diet plans also emphasize hydration, encouraging clients to drink plenty of water throughout the day. We believe that with the right diet and consistent exercise, anyone can achieve their fitness goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3>Services</h3>
+    <div class="flex container">
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/services-icon-1.png" alt="Basketball Icon" />
+        <h4>Pilates</h4>
+        <p>Pilates is a low-impact exercise system designed to strengthen the core, improve flexibility, and enhance overall body alignment. At our gym, we offer a variety of Pilates services to help our members achieve their fitness goals.</p>
+      </div>
+
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/services-icon-2.png" alt="Bench Press Icon" />
+        <h4>Free Lifting</h4>
+        <p>Build strength and confidence with our FreeLifting equipment.
+          Get your heart pumping with our challenging FreeLifting workouts.
+          Improve your posture and form with our expert FreeLifting trainers.</p>
+      </div>
+
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/services-icon-3.png" alt="Stopwatch Icon" />
+        <h4>Yoga</h4>
+        <p>Find your inner zen with our calming Yoga classes.
+          Increase your flexibility and balance with our Yoga instructors.
+          Our Yoga studio is a peaceful oasis in the midst of a busy gym.</p>
+      </div>
+      <div class="box">
+        <img src="https://onclickwebdesign.com/wp-content/uploads/services-icon-4.png" alt="Mp3 Player Icon" />
+        <h4>Spinning</h4>
+        <p>Burn calories and build endurance with our high-intensity Spinning classes.
+          Our Spinning studio has state-of-the-art bikes and sound systems for an immersive workout experience.
+          Our certified Spinning instructors will push you to your limits and help you achieve your goals.</p>
+      </div>
+    </div>
+
+    <button>See All Services</button>
+  </section>
+
+  <section id="trainers">
+    <h5>The Best</h5>
+    <h3>Trainers</h3>
+    <div class="container">
+      <div id="trainers-slider">
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-1.jpg" alt="Rachel Smith Personal Trainer" />
+          <h4>Rachel Smith</h4>
+          <p>Aerobics Instructor</p>
+        </div>
+
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-2.jpg" alt="Nick Andros Personal Trainer" />
+          <h4>Nick Andros</h4>
+          <p>Pilates Instructor</p>
+        </div>
+
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-3.jpg" alt="Larry Underwood Personal Trainer" />
+          <h4>Larry Underwood</h4>
+          <p>Strength Training Coach</p>
+        </div>
+
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-1.jpg" alt="Rachel Smith Personal Trainer" />
+          <h4>Rachel Smith</h4>
+          <p>Aerobics Instructor</p>
+        </div>
+
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-2.jpg" alt="Nick Andros Personal Trainer" />
+          <h4>Nick Andros</h4>
+          <p>Pilates Instructor</p>
+        </div>
+
+        <div class="trainer-slider-item">
+          <img src="https://onclickwebdesign.com/wp-content/uploads/trainer-3.jpg" alt="Larry Underwood Personal Trainer" />
+          <h4>Larry Underwood</h4>
+          <p>Strength Training Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="schedule-services">
+    <div class="flex container">
+      <div class="upcoming-classes-box">
+        <strong>NEXT</strong>
+        <h4>Upcoming Classes</h4>
+        <table>
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Gym Fitness</td>
+            <td>11:00 - 12:00</td>
+          </tr>
+
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Pilates</td>
+            <td>12:00 - 1:00</td>
+          </tr>
+
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Spinning</td>
+            <td>1:00 - 2:00</td>
+          </tr>
+
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Yoga</td>
+            <td>2:00 - 3:00</td>
+          </tr>
+
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Zumba</td>
+            <td>3:00 - 4:00</td>
+          </tr>
+
+          <tr>
+            <td><img src="https://onclickwebdesign.com/wp-content/uploads/stopwatch.png" alt="Stopwatch" /></td>
+            <td>Cardio Kickbox</td>
+            <td>4:00 - 5:00</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="membership-cards-box">
+        <div class="inner-container">
+          <strong>NEXT</strong>
+          <h4>Membership Deals</h4>
+          <h2>25% <span>Discount</span></h2>
+        </div>
+      </div>
+
+      <div class="personal-trainer-box">
+        <strong>BECOME A</strong>
+        <h4>Personal Trainer</h4>
+        <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla pretium.Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla pretium.</p>
+        <button><li><a onclick="openModal()">Sign up Now</a></li></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div id="footer-logo" class="top-gym-logo">
+        <a href="#">Top<br/>Gym</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+<section id="form">
+      <div class="mailing-list">
+        <div class="column right">
+          <form action="https://formsubmit.co/mrbeast5353@gmail.com" target="_blank" method="POST">
+              <div class="fields">
+                  <div class="field name">
+                      <input type="text" name="name" placeholder="Your Full Name" required>
+                  </div>
+                  <div class="field email">
+                      <input type="email" name="email" placeholder="Your Email address" required>
+                  </div>
+              </div>
+              <div class="button-area">
+                  <button type="submit">Send message</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/"><span class="fab fa-facebook"></span></a></li>
+        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1426686022%3A1681888186307307&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%253FthemeRefresh%253D1&ec=65620&hl=en&ifkv=AQMjQ7QaOSLNZ4SdVB13MDh1ZIXRdzf15tuhEiQ_ARbi6KSrmLBzFsdvyB-JXluliqx1n2D9hRY3Gg&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><span class="fab fa-youtube"></span></a></li>
+      </ul>
+
+      <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" class="bicep" alt="Bicep flex icon" />
+
+      <small>
+        Copyright &copy;2023 All rights reserved | This template is made  <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Vaibhav_Jain</a>
+      </small>
+    </div>
+  </footer>
+
+  <div id="search-container">
+    <span id="search-container-hide" class="fa fa-times"></span>
+    <h3>Search</h3>
+    <div class="search-container-input">
+      <input type="text" name="search" placeholder="Search this site" />
+      <button>Search</button>
+    </div>
+  </div>
+
+  <div id="video-frame">
+    <span id="video-frame-hide" class="fa fa-times"></span>
+    <div class="video-frame-container">
+      <div class="video-frame-scaler">
+          <iframe id="embed-video" src="https://www.youtube.com/embed/WCBEammPsu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    $(function () {
+      
+      const headerNav = $('header nav');
+      const hamburgerMenu = $('#hamburger-menu');
+      const search = $('#search');
+      const searchContainerHide = $('#search-container-hide');
+      const searchContainer = $('#search-container');
+      const youtubeButton = $('.youtube-button');
+      const videoFrame = $('#video-frame');
+      const videoFrameHide = $('#video-frame-hide');
+      const embedVideo = $('#embed-video');
+
+      
+      $('#hero-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        fade: true,
+        speed: 1000,
+        cssEase: 'linear'
+      });
+
+      $('#trainers-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+        nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 530,
+            settings: {
+              slidesToShow: 1,
+              arrows: false
+            }
+          }
+        ]
+      });
+
+     
+      hamburgerMenu.on('click', () => {
+        headerNav.toggle();
+      });
+
+      search.on('click', () => {
+        searchContainer.css({
+          'opacity': '1',
+          'visibility': 'visible',
+          'z-index': '100'
+        });
+      });
+
+      searchContainerHide.on('click', () => {
+        searchContainer.css({
+          'opacity': '0',
+          'visibility': 'hidden',
+          'z-index': '0'
+        });
+      });
+
+      youtubeButton.on('click', () => {
+        videoFrame.css({
+          'opacity': '1',
+          'visibility': 'visible',
+          'z-index': '100'
+        });
+      });
+
+      videoFrameHide.on('click', () => {
+        videoFrame.css({
+          'opacity': '0',
+          'visibility': 'hidden',
+          'z-index': '0'
+        });
+        
+        embedVideo.prop('src', embedVideo.prop('src'));
+      });
+    });
+  </script>
+
+
+  <script src="script12.js"></script>
+  
+</body>
+</html>
